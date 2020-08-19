@@ -96,12 +96,6 @@ Set the StartAngle property as 0 and SweepAngle property as 180 to show in below
 ```
 ## See also
 
-[How to add the scales in Xamarin Circular Gauge (SfCircularGauge)](https://help.syncfusion.com/xamarin/circular-gauge/scales)
-
-[How to customize the rim in Xamarin Circular Gauge (SfCircularGauge)](https://help.syncfusion.com/xamarin/circular-gauge/rim)
-
-[How to apply themes for SfCircularGauge](https://help.syncfusion.com/xamarin/circular-gauge/rim)
-
 [How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge?_ga=2.222859803.1097610725.1597034638-1273195395.1560836863)
 
 [How to set start and sweep angles for scale](https://www.syncfusion.com/kb/10567/how-to-set-start-and-sweep-angles-for-scale)
