@@ -1,0 +1,26 @@
+﻿<Window x:Class="GaugeSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GaugeSample"
+        mc:Ignorable="d"
+             xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <syncfusion:SfCircularGauge x:Name="gauge" GaugeType="North">
+            <syncfusion:SfCircularGauge.Scales>
+                <syncfusion:CircularScale   StartAngle="180" SweepAngle="180" >
+                    <syncfusion:CircularScale.Pointers>
+                        <syncfusion:CircularPointer x:Name="pointer" Value="80"
+                                        PointerType="SymbolPointer" 
+                                        Symbol="Ellipse"/>
+                    </syncfusion:CircularScale.Pointers>
+                </syncfusion:CircularScale>
+            </syncfusion:SfCircularGauge.Scales>
+        </syncfusion:SfCircularGauge>
+
+
+
+    </Grid>
+</Window>
