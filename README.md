@@ -1,108 +1,43 @@
 # How to create various directional semi circular gauge (SfCircularGauge) in WPF
 
-This article explains how to create the various directional semi-circular gauge  using the StartAngle and SweepAngle properties of circular scale in WPF as shown in below.
+This repository contains sample to create the various directional semi-circular gauge using the [Syncfusion WPF SfCircularGauge](https://help.syncfusion.com/wpf/radial-gauge/getting-started) control.
 
-## East directional semi-circular gauge
+Please refer the KB through this [link](https://www.syncfusion.com/kb/12608/how-to-create-various-directional-semi-circular-gauge-sfcirculargauge-in-wpf).
 
-Set the StartAngle property as 270 and SweepAngle property as 180 to show in below
+## Syncfusion controls
 
- ![](East_directional_gauge.png)
+This project used the following Syncfusion control(s):
+* [SfCircularGauge](https://www.syncfusion.com/wpf-controls/radial-gauge)
 
-[XAML]
+## Requirements to run the sample
 
-```
-        <syncfusion:SfCircularGauge x:Name="gauge" GaugeType="North">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale   StartAngle="270" SweepAngle="180" >
-                    <syncfusion:CircularScale.Pointers>
-                        <syncfusion:CircularPointer x:Name="pointer" Value="80"
-                                        PointerType="SymbolPointer" 
-                                        Symbol="Ellipse"/>
-                    </syncfusion:CircularScale.Pointers>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-```
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+* .NET Framework 3.5/4.0/4.5/4.5.1/4.6
+* .NET Core 3.1
+* .NET 5.0
 
-## West directional semi-circular gauge
+Refer to the following link for more details - [System Requirements](https://help.syncfusion.com/wpf/system-requirements)
 
-Set the StartAngle property as 90 and SweepAngle property as 180 to show in below.
+## How to run the sample
 
- ![](West_directional_gauge.png)
+1. Clone the sample and open it in Visual Studio.
 
- 
+   *Note: If you download the sample using the "Download ZIP" option, right-click it, select Properties, and then select Unblock.*
+   
+2. Register your license key in the App.cs file as demonstrated in the following code.
 
-[XAML]
+		public App()
+		{
+			//Register Syncfusion license
+			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
+		}
+		
+	Refer to this [link](https://help.syncfusion.com/wpf/licensing/overview) for more details.
+	
+3. Clean and build the application.
 
-```
-        <syncfusion:SfCircularGauge x:Name="gauge" GaugeType="North">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale   StartAngle="90" SweepAngle="180" >
-                    <syncfusion:CircularScale.Pointers>
-                        <syncfusion:CircularPointer x:Name="pointer" Value="80"
-                                        PointerType="SymbolPointer" 
-                                        Symbol="Ellipse"/>
-                    </syncfusion:CircularScale.Pointers>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-```
+4. Run the application.
 
-## North directional semi-circular gauge
+## License
 
-Set the StartAngle property as 180 and SweepAngle property as 180 to show in below
-
-  ![](North_directional_gauge.png)
-
-
-[XAML]
-
-```
-          <syncfusion:SfCircularGauge x:Name="gauge" GaugeType="North">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale   StartAngle="180" SweepAngle="180" >
-                    <syncfusion:CircularScale.Pointers>
-                        <syncfusion:CircularPointer x:Name="pointer" Value="80"
-                                        PointerType="SymbolPointer" 
-                                        Symbol="Ellipse"/>
-                    </syncfusion:CircularScale.Pointers>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-```
-
-## South directional semi-circular gauge
-
-Set the StartAngle property as 0 and SweepAngle property as 180 to show in below
-
- ![](South_directional_gauge.png)
-
- 
-
-[XAML]
-
-```
-        <syncfusion:SfCircularGauge x:Name="gauge" GaugeType="North">
-            <syncfusion:SfCircularGauge.Scales>
-                <syncfusion:CircularScale   StartAngle="0" SweepAngle="180" >
-                    <syncfusion:CircularScale.Pointers>
-                        <syncfusion:CircularPointer x:Name="pointer" Value="80"
-                                        PointerType="SymbolPointer" 
-                                        Symbol="Ellipse"/>
-                    </syncfusion:CircularScale.Pointers>
-                </syncfusion:CircularScale>
-            </syncfusion:SfCircularGauge.Scales>
-        </syncfusion:SfCircularGauge>
-```
-## See also
-
-[How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge?_ga=2.222859803.1097610725.1597034638-1273195395.1560836863)
-
-[How to set start and sweep angles for scale](https://www.syncfusion.com/kb/10567/how-to-set-start-and-sweep-angles-for-scale)
-
-[How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
-
-[How to customize Rim position for Scale](https://www.syncfusion.com/kb/8296/how-to-customize-rim-position-for-scale)
-
-
-
+Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
